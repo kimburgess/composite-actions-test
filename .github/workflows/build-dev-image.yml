@@ -1,0 +1,11 @@
+name: Build Dev Image
+
+on:
+  push:
+
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+    name: Build
+    steps:
+     - uses: placeos/.github/actions/build-dev-image@main
